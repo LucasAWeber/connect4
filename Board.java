@@ -101,4 +101,17 @@ public class Board{
         return false;
     }
 
+    /**
+     * This checks if the board is full or not
+     * @return false if the board is full and true otherwise
+     */
+    public boolean validBoard() {
+        for (int i = 0; i < board.get(0).size(); i++) {
+            if (board.get(0).get(i) == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
