@@ -35,6 +35,10 @@ public class TextUI{
      * @param turn which player turn it is
      */
     public void displayWinner(int turn) {
+        if (turn == 3) {
+            System.out.print("Tie, Nobody Won!\n");
+            return;
+        }
         System.out.print("Player " + turn + " Won!\n");
     }
 
